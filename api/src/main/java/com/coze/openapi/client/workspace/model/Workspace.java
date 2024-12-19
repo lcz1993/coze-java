@@ -8,6 +8,9 @@ import lombok.Data;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Workspace {
   @JsonProperty("id")
   private String id;
